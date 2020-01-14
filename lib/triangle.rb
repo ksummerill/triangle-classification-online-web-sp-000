@@ -12,9 +12,13 @@ class Triangle
   # Valid: each side must be larger than 0
   def kind
   if side1 == side2 && side2 == side3
-    return :equilateral
+    puts ":equilateral"
+
+    begin
+      raise TriangleError
+
   else side1 == side2 || side1 == side3 || side2 == side3
-    return :isosceles
+    puts ":isosceles"
 
   # returns, as a symbol, its type. The valid types are: :equilateral, :isosceles, :scalene
     # return symbol
