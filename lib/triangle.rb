@@ -10,6 +10,7 @@ class Triangle
   # :equilateral, :isosceles, :scalene
   def kind
 
+    return symbol
   end
 
   class TriangleError < StandardError
