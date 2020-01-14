@@ -19,6 +19,7 @@ class Triangle
   # returns, as a symbol, its type. The valid types are: :equilateral, :isosceles, :scalene
     # return symbol
   end
+  end
 
   class TriangleError < StandardError
 
