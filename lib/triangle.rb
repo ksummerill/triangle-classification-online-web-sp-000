@@ -10,8 +10,9 @@ class Triangle
   # Types: :equilateral, :isosceles, :scalene
   # Valid: The sum of the lengths of any two sides of a triangle always exceeds the length of the third side.
   # Valid: each side must be larger than 0
-  def kind
-  if side1 == side2 && side2 == side3
+  def kind()
+  if (@side1 <= 0) || (@side2 <= 0) || (@side3 <= 0)
+    raise TriangleError
     puts ":equilateral"
 
     begin
